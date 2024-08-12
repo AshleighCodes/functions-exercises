@@ -12,7 +12,10 @@ def get_float(prompt_string: str):
         - A float converted from the user's input
     """
 
-    pass
+    user_type = input(prompt_string)
+    num_final = float(user_type)
+    return num_final
+
 
 #############################################################################################################
 # Challenge 2 -> A Function to convert miles to km
@@ -27,8 +30,9 @@ def miles_to_km(distance_in_miles: float):
     Returns
         - a float representing the distance in kilometers
     """
-    
-    pass
+
+    km = distance_in_miles * 1.60934
+    return km
 
 #############################################################################################################
 # Challenge 3 -> A function to calculate the total distance run in a relay
@@ -45,6 +49,9 @@ def relay_distance(distance_per_runner: float, number_of_runners: float):
     Returns:
         - A float representing the total distance run.
     """
+
+    distance=distance_per_runner*number_of_runners
+    return distance
     
     pass
 
